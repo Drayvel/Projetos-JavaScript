@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Prova - Jogo Heroi e Vilão</title>
+</head>
+<body>
+    <div id="app">
+        <div class="personagem">
+            <div class="barra-vida" :style="{width: heroi.vida + '%'}">{{heroi.vida}}%</div>
+            <div class="barra-stamina" :style="{width: heroi.stamina + '%'}">{{heroi.stamina}}%</div>
+            <div class="sprite">
+                <img id="gif1" src="./gifs/gifs-de-street-fighter-5.gif">
+            </div>
+            <h1>Heroi</h1>
+            <div class="acoes">
+                <button @click="atacar(true)">Atacar</button>
+                <button @click="defender(true)">Defender</button>
+                <button @click="usarPocao(true)">Poção {{heroi.pot}}x</button>
+                <button @click="correr(true)">Correr</button>
+            </div>
+        </div>
+        <div class="personagem">
+            <div class="barra-vida" :style="{width: vilao.vida + '%'}">{{vilao.vida}}%</div>
+            <div class="barra-stamina" :style="{width: vilao.stamina + '%'}">{{vilao.stamina}}%</div>
+            <div class="sprite2">
+                <img id="gif2" src="./gifs/gifs-de-street-fighter-6.gif">
+            </div>
+            <h1>Vilão</h1>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
+
+<script src="index.js"></script>

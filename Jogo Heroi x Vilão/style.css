@@ -1,0 +1,105 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(149deg, rgba(139,182,182,1) 41%, rgba(0,212,255,1) 100%);
+}
+
+#app {
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.personagem {
+    background-color: white;
+    border: 2px solid #1d509f;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+
+.acoes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:  10px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: darkcyan;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: background-color 0.3, transform 0.2;
+}
+
+button:hover {
+    background-color: rgb(35, 194, 194);
+}
+
+button:active {
+    transform: translateY(2px)
+}
+
+.barra-vida {
+    height: 30px;
+    background-color: rgb(43, 190, 43);
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.sprite {
+    height: 100px;
+    margin-bottom: 20px;
+    background: linear-gradient(149deg, rgba(149,226,226,1) 20%, rgba(0,255,250,1) 32%, rgba(29,224,217,1) 46%, rgba(42,176,233,1) 59%, rgba(0,65,255,1) 73%, rgba(9,9,121,1) 100%);
+    border-radius: 5px;
+}
+
+.sprite2 {
+    height: 100px;
+    margin-bottom: 20px;
+    background: linear-gradient(149deg, rgba(122,25,25,1) 20%, rgba(212,109,109,1) 32%, rgba(255,0,0,1) 46%, rgba(164,43,43,1) 59%, rgba(138,28,28,1) 73%, rgba(70,4,4,1) 100%);
+    border-radius: 5px;
+}
+
+#gif1 {
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+#gif2 {
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.barra-stamina {
+    height: 30px;
+    background-color: rgb(43, 156, 190);
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.titulo {
+    font-size: 40px;
+    font-weight: bold;
+    height: 65%;
+    width: 0%;
+    position: static;
+    font-family: 'Courier New', Courier, monospace;
+}
