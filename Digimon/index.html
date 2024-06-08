@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Digimons</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+  <div id="app" v-cloak>
+    <ul>
+      <li>
+        <div class="digimon-card" v-for="(digimon, index) in digimons" :key="index">
+          <p class="digimon-name">{{ digimon.name }}</p>
+          <img class="digimon-image" :src="digimon.img" :alt="digimon.name">
+          <p>Tipo: {{ digimon.level }}</p>
+        </div>
+      </li>
+    </ul>
+    <div v-if="loading">Carregando...</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
